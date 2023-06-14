@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana3.Page2">
+
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="TextColor" Value="#A1029F"/>
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+                
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label Text="Semana3: Estilo 2" Style="{StaticResource labelStyle}"/>
+            <Label x:Name="lblDatoUno" TextColor="Red" FontSize="14"/>
+            <Entry x:Name="txtDatoDos" IsEnabled="True"></Entry>
+            <Button x:Name="btnAbrir" Text="Abrir ventana 3" Clicked="btnAbrir_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
