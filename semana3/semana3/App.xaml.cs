@@ -9,7 +9,8 @@ namespace semana3
         public App()
         {
             InitializeComponent();
-
+            //NAVEGACION
+            //PRUEBA
             MainPage = new NavigationPage(new Page1());
         }
 
